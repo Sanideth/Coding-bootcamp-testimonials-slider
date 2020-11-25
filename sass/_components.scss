@@ -1,0 +1,49 @@
+.text-main {
+  font-size: 3.2rem;
+  color: var(--color-secondary);
+  font-weight: 300;
+  line-height: 1.5;
+  position: relative;
+
+  &::after {
+    content: url(../img/pattern-quotes.svg);
+    position: absolute;
+    top: -6.5rem;
+    left: 9.5rem;
+  }
+}
+
+.heading-tertiary {
+  color: var(--color-secondary);
+  font-weight: 700;
+  font-size: 1.9rem;
+}
+
+.btn-wrapper {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  right: -12.5rem;
+  transform: translateY(50%);
+}
+
+.btn {
+  border: none;
+  padding: 1em 2em;
+  display: inline;
+}
+
+.btn-previous {
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+}
+
+.btn-next {
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+}
+
+.btn-previous,
+.btn-next {
+  background-color: #fff;
+}

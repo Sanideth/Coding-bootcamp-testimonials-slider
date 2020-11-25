@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+:root {
+  --color-primary: hsl(240, 18%, 77%);
+  --color-secondary: hsl(240, 38%, 20%); }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  height: 100vh;
+  background-color: #fff;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(../img/pattern-bg.svg), url(../img/pattern-curve.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 10% top 3rem, bottom 0rem left 0rem;
+  background-attachment: fixed; }
+
+.container {
+  max-width: 124rem; }
+
+.testimonials {
+  padding: 0 5em;
+  margin-bottom: 10rem; }
+  .testimonials__content-wrapper {
+    display: none;
+    height: 65vh;
+    position: relative;
+    width: 100%; }
+  .testimonials__left {
+    width: 55%;
+    height: 100%;
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .testimonials__span {
+    color: var(--color-primary);
+    font-weight: 400; }
+  .testimonials__right {
+    background-image: url(../img/image-tanya.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    border-radius: 0.5rem;
+    box-shadow: 0rem 2.5rem 3rem -3rem var(--color-secondary); }
+
+.text-main {
+  font-size: 3.2rem;
+  color: var(--color-secondary);
+  font-weight: 300;
+  line-height: 1.5;
+  position: relative; }
+  .text-main::after {
+    content: url(../img/pattern-quotes.svg);
+    position: absolute;
+    top: -6.5rem;
+    left: 9.5rem; }
+
+.heading-tertiary {
+  color: var(--color-secondary);
+  font-weight: 700;
+  font-size: 1.9rem; }
+
+.btn-wrapper {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  right: -12.5rem;
+  transform: translateY(50%); }
+
+.btn {
+  border: none;
+  padding: 1em 2em;
+  display: inline; }
+
+.btn-previous {
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem; }
+
+.btn-next {
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem; }
+
+.btn-previous,
+.btn-next {
+  background-color: #fff; }
+
+.active {
+  display: flex; }
+
+.u-mb-m {
+  margin-bottom: 5rem; }

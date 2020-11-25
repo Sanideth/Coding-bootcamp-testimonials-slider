@@ -1,0 +1,25 @@
+{
+  "name": "coding-bootcamp-testimonials-slider",
+  "version": "1.0.0",
+  "description": "coding bootcamp testimonials slider challenge for frontendmentor.io",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sanideth/Coding-bootcamp-testimonials-slider.git"
+  },
+  "author": "Sandro Bochorishvili",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sanideth/Coding-bootcamp-testimonials-slider/issues"
+  },
+  "homepage": "https://github.com/Sanideth/Coding-bootcamp-testimonials-slider#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "node-sass": "^5.0.0",
+    "postcss-cli": "^8.3.0"
+  }
+}
