@@ -5,11 +5,26 @@
   line-height: 1.5;
   position: relative;
 
+  @media only screen and (max-width: $bp-small) {
+    line-height: 1.2;
+    font-size: 3rem;
+  }
+
   &::after {
     content: url(../img/pattern-quotes.svg);
     position: absolute;
     top: -6.5rem;
     left: 9.5rem;
+
+    @media only screen and (max-width: $bp-big) {
+      top: -7.5rem;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      top: -9rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      content: none;
+    }
   }
 }
 
@@ -25,6 +40,12 @@
   bottom: 0;
   right: -12.5rem;
   transform: translateY(50%);
+
+  @media only screen and (max-width: $bp-small) {
+    bottom: 100%;
+    transform: translate(50%, -280%);
+    right: 50%;
+  }
 }
 
 .btn {

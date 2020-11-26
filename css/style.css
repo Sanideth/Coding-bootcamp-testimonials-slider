@@ -11,6 +11,12 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 55%; } }
+  @media only screen and (max-width: 62.5em) {
+    html {
+      font-size: 50%; } }
 
 body {
   height: 100vh;
@@ -19,31 +25,71 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   background-image: url(../img/pattern-bg.svg), url(../img/pattern-curve.svg);
   background-repeat: no-repeat, no-repeat;
-  background-position: right 10% top 3rem, bottom 0rem left 0rem;
-  background-attachment: fixed; }
+  background-position: right 10% top 80px, bottom 0rem left 0rem;
+  background-size: 885px; }
+  @media only screen and (max-width: 62.5em) {
+    body {
+      background-position: right 10% top 21rem, bottom 0rem left 0rem;
+      background-size: 730px; } }
+  @media only screen and (max-width: 75em) {
+    body {
+      background-position: right 10% top 21rem, bottom 0rem left 0rem;
+      background-size: 730px; } }
+  @media only screen and (max-width: 50em) {
+    body {
+      background-position: right 13rem top 28rem, bottom 0rem left 0rem;
+      background-size: 45rem, 80%; } }
 
 .container {
-  max-width: 124rem; }
+  max-width: 135rem; }
 
 .testimonials {
-  padding: 0 5em;
-  margin-bottom: 10rem; }
+  padding: 0 5em; }
   .testimonials__content-wrapper {
     display: none;
     height: 65vh;
     position: relative;
     width: 100%; }
+    @media only screen and (max-width: 75em) {
+      .testimonials__content-wrapper {
+        height: 50vh; } }
+    @media only screen and (max-width: 62.5em) {
+      .testimonials__content-wrapper {
+        height: 40vh; } }
+    @media only screen and (max-width: 50em) {
+      .testimonials__content-wrapper {
+        flex-direction: column;
+        align-items: center;
+        height: 70vh; } }
   .testimonials__left {
-    width: 55%;
+    width: 50%;
     height: 100%;
     position: relative;
     z-index: 1000;
     display: flex;
     flex-direction: column;
     justify-content: center; }
+    @media only screen and (max-width: 75em) {
+      .testimonials__left {
+        width: 47%; } }
+    @media only screen and (max-width: 62.5em) {
+      .testimonials__left {
+        width: 40%; } }
+    @media only screen and (max-width: 50em) {
+      .testimonials__left {
+        order: 2;
+        height: 30%;
+        text-align: center;
+        width: 85%; } }
+  @media only screen and (max-width: 50em) {
+    .testimonials__main-text-wrapper::before {
+      content: url(../img/pattern-quotes.svg);
+      position: absolute;
+      top: -20%;
+      left: 50%;
+      transform: translate(-50%, -10%); } }
   .testimonials__span {
     color: var(--color-primary);
     font-weight: 400; }
@@ -52,12 +98,37 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 50%;
+    width: 55%;
     height: 100%;
     position: absolute;
-    left: 50%;
+    left: 45%;
     border-radius: 0.5rem;
     box-shadow: 0rem 2.5rem 3rem -3rem var(--color-secondary); }
+    @media only screen and (max-width: 75em) {
+      .testimonials__right {
+        width: 60%;
+        left: 40%; } }
+    @media only screen and (max-width: 62.5em) {
+      .testimonials__right {
+        width: 70%;
+        left: 30%; } }
+    @media only screen and (max-width: 50em) {
+      .testimonials__right {
+        position: relative;
+        top: 0;
+        left: 0;
+        order: 1;
+        height: 50%;
+        width: 50%;
+        min-width: 50rem;
+        background-size: cover;
+        margin-bottom: auto;
+        box-shadow: 0rem 6.5rem 7rem -6rem var(--color-secondary); } }
+
+.footer {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 1.5rem; }
 
 .text-main {
   font-size: 3.2rem;
@@ -65,11 +136,24 @@ body {
   font-weight: 300;
   line-height: 1.5;
   position: relative; }
+  @media only screen and (max-width: 50em) {
+    .text-main {
+      line-height: 1.2;
+      font-size: 3rem; } }
   .text-main::after {
     content: url(../img/pattern-quotes.svg);
     position: absolute;
     top: -6.5rem;
     left: 9.5rem; }
+    @media only screen and (max-width: 75em) {
+      .text-main::after {
+        top: -7.5rem; } }
+    @media only screen and (max-width: 62.5em) {
+      .text-main::after {
+        top: -9rem; } }
+    @media only screen and (max-width: 50em) {
+      .text-main::after {
+        content: none; } }
 
 .heading-tertiary {
   color: var(--color-secondary);
@@ -82,6 +166,11 @@ body {
   bottom: 0;
   right: -12.5rem;
   transform: translateY(50%); }
+  @media only screen and (max-width: 50em) {
+    .btn-wrapper {
+      bottom: 100%;
+      transform: translate(50%, -280%);
+      right: 50%; } }
 
 .btn {
   border: none;
