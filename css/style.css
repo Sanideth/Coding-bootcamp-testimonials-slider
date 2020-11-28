@@ -25,7 +25,8 @@ body {
   background-image: url(../img/pattern-curve.svg);
   background-position: bottom 0 left 0;
   background-repeat: no-repeat;
-  background-size: 125rem; }
+  background-size: 125rem;
+  background-attachment: fixed; }
   @media only screen and (max-width: 75em) {
     body {
       background-size: 90rem; } }
@@ -43,8 +44,7 @@ body {
   background-image: url(../img/pattern-bg.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: right 0 center;
-  background-size: contain;
-  background-attachment: fixed; }
+  background-size: contain; }
   @media only screen and (max-width: 75em) {
     .container {
       max-width: 115rem; } }
@@ -143,15 +143,15 @@ body {
         right: -10.5rem; } }
     @media only screen and (max-width: 50em) {
       .testimonials__btn-wrapper {
-        bottom: 95%;
+        bottom: 97%;
         transform: translate(50%, -280%);
         right: 50%; } }
     @media only screen and (max-width: 34.25em) {
       .testimonials__btn-wrapper {
-        bottom: 116%; } }
+        bottom: 110%; } }
     @media only screen and (max-width: 26em) {
       .testimonials__btn-wrapper {
-        bottom: 113%; } }
+        bottom: 108%; } }
   .testimonials__right {
     background-image: url(../img/image-tanya.jpg);
     background-repeat: no-repeat;
@@ -186,10 +186,10 @@ body {
       .testimonials__right {
         height: 31rem;
         min-width: 31rem;
-        margin-bottom: 20rem; } }
+        margin-bottom: 18rem; } }
     @media only screen and (max-width: 26em) {
       .testimonials__right {
-        height: 25rem;
+        height: 33rem;
         min-width: 0;
         width: 100%; } }
 
@@ -322,7 +322,7 @@ body {
   margin-bottom: 5rem; }
   @media only screen and (max-width: 26em) {
     .u-mb-m {
-      margin-bottom: 12rem; } }
+      margin-bottom: 10rem; } }
 
 @keyframes fadeIn {
   0% {
