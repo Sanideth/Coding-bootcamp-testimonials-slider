@@ -1,8 +1,64 @@
 .active {
   display: flex;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
 }
 
+.right-bg {
+  background-image: url(../img/image-john.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 50.5%;
+  height: 100%;
+  position: absolute;
+  left: 49.5%;
+  border-radius: 0.5rem;
+  box-shadow: 0rem 2.5rem 3rem -3rem var(--color-secondary);
+
+  @media only screen and (max-width: $bp-big) {
+    width: 55%;
+    left: 45%;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    width: 60%;
+    left: 40%;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    position: relative;
+    top: 0;
+    left: 0;
+    order: 1;
+    height: 32rem;
+    min-width: 32rem;
+    background-size: cover;
+    margin-bottom: 15rem;
+    box-shadow: 0rem 6.5rem 7rem -6rem var(--color-secondary);
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    height: 31rem;
+    min-width: 31rem;
+    margin-bottom: 20rem;
+  }
+
+  @media only screen and (max-width: $bp-tiny) {
+    height: 25rem;
+    min-width: 0;
+    width: 100%;
+  }
+}
+// padding medium
+.p-m {
+  padding: 5em;
+}
 //margin bottom medium
 .u-mb-m {
   margin-bottom: 5rem;
+
+  @media only screen and (max-width: $bp-tiny) {
+    margin-bottom: 12rem;
+  }
 }

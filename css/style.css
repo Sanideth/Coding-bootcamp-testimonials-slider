@@ -14,9 +14,6 @@ html {
   @media only screen and (max-width: 75em) {
     html {
       font-size: 55%; } }
-  @media only screen and (max-width: 62.5em) {
-    html {
-      font-size: 50%; } }
 
 body {
   height: 100vh;
@@ -25,110 +22,187 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../img/pattern-bg.svg), url(../img/pattern-curve.svg);
-  background-repeat: no-repeat, no-repeat;
-  background-position: right 10% top 80px, bottom 0rem left 0rem;
-  background-size: 885px; }
-  @media only screen and (max-width: 62.5em) {
-    body {
-      background-position: right 10% top 21rem, bottom 0rem left 0rem;
-      background-size: 730px; } }
+  background-image: url(../img/pattern-curve.svg);
+  background-position: bottom 0 left 0;
+  background-repeat: no-repeat;
+  background-size: 125rem; }
   @media only screen and (max-width: 75em) {
     body {
-      background-position: right 10% top 21rem, bottom 0rem left 0rem;
-      background-size: 730px; } }
+      background-size: 90rem; } }
   @media only screen and (max-width: 50em) {
     body {
-      background-position: right 13rem top 28rem, bottom 0rem left 0rem;
-      background-size: 45rem, 80%; } }
+      background-size: 75rem; } }
+  @media only screen and (max-width: 50em) {
+    body {
+      background-size: 50rem; } }
 
 .container {
-  max-width: 135rem; }
+  max-width: 135rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-image: url(../img/pattern-bg.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 0 center;
+  background-size: contain; }
+  @media only screen and (max-width: 75em) {
+    .container {
+      max-width: 115rem; } }
+  @media only screen and (max-width: 62.5em) {
+    .container {
+      max-width: 100rem; } }
+  @media only screen and (max-width: 50em) {
+    .container {
+      background-size: 60rem;
+      background-position: right 0 top 0; } }
+  @media only screen and (max-width: 34.25em) {
+    .container {
+      background-size: 50rem;
+      background-position: right 0 top 0; } }
+  @media only screen and (max-width: 26em) {
+    .container {
+      background-position: left 0 top 0; } }
 
 .testimonials {
-  padding: 0 5em; }
+  padding: 0 10em;
+  margin-bottom: 5rem; }
+  @media only screen and (max-width: 50em) {
+    .testimonials {
+      padding: 5em 10em;
+      margin: 0; } }
+  @media only screen and (max-width: 34.25em) {
+    .testimonials {
+      padding: 5em 3em; } }
+  @media only screen and (max-width: 26em) {
+    .testimonials {
+      padding: 5em 0; } }
   .testimonials__content-wrapper {
     display: none;
-    height: 65vh;
+    height: 55rem;
     position: relative;
     width: 100%; }
     @media only screen and (max-width: 75em) {
       .testimonials__content-wrapper {
-        height: 50vh; } }
+        height: 50rem; } }
     @media only screen and (max-width: 62.5em) {
       .testimonials__content-wrapper {
-        height: 40vh; } }
+        height: 45rem; } }
     @media only screen and (max-width: 50em) {
       .testimonials__content-wrapper {
         flex-direction: column;
         align-items: center;
-        height: 70vh; } }
+        height: 75rem; } }
+    @media only screen and (max-width: 50em) {
+      .testimonials__content-wrapper {
+        flex-direction: column;
+        align-items: center;
+        height: 80rem; } }
   .testimonials__left {
-    width: 50%;
+    flex-basis: 55%;
     height: 100%;
     position: relative;
     z-index: 1000;
     display: flex;
     flex-direction: column;
     justify-content: center; }
-    @media only screen and (max-width: 75em) {
-      .testimonials__left {
-        width: 47%; } }
     @media only screen and (max-width: 62.5em) {
       .testimonials__left {
-        width: 40%; } }
+        flex-basis: 50%; } }
     @media only screen and (max-width: 50em) {
       .testimonials__left {
         order: 2;
-        height: 30%;
         text-align: center;
-        width: 85%; } }
+        flex-basis: 30%; } }
+  @media only screen and (max-width: 50em) {
+    .testimonials__main-text-wrapper {
+      height: 15rem; } }
   @media only screen and (max-width: 50em) {
     .testimonials__main-text-wrapper::before {
       content: url(../img/pattern-quotes.svg);
       position: absolute;
-      top: -20%;
+      top: -26%;
       left: 50%;
-      transform: translate(-50%, -10%); } }
+      transform: translate(-50%, -10%) scale(0.65); } }
+  @media only screen and (max-width: 50em) and (max-width: 26em) {
+    .testimonials__main-text-wrapper::before {
+      top: -18%; } }
   .testimonials__span {
     color: var(--color-primary);
     font-weight: 400; }
+    @media only screen and (max-width: 50em) {
+      .testimonials__span {
+        display: block; } }
+  .testimonials__btn-wrapper {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    right: -12.5rem;
+    transform: translateY(50%); }
+    @media only screen and (max-width: 75em) {
+      .testimonials__btn-wrapper {
+        right: -10.5rem; } }
+    @media only screen and (max-width: 50em) {
+      .testimonials__btn-wrapper {
+        bottom: 95%;
+        transform: translate(50%, -280%);
+        right: 50%; } }
+    @media only screen and (max-width: 34.25em) {
+      .testimonials__btn-wrapper {
+        bottom: 116%; } }
+    @media only screen and (max-width: 26em) {
+      .testimonials__btn-wrapper {
+        bottom: 113%; } }
   .testimonials__right {
     background-image: url(../img/image-tanya.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 55%;
+    width: 50.5%;
     height: 100%;
     position: absolute;
-    left: 45%;
+    left: 49.5%;
     border-radius: 0.5rem;
     box-shadow: 0rem 2.5rem 3rem -3rem var(--color-secondary); }
     @media only screen and (max-width: 75em) {
       .testimonials__right {
-        width: 60%;
-        left: 40%; } }
+        width: 55%;
+        left: 45%; } }
     @media only screen and (max-width: 62.5em) {
       .testimonials__right {
-        width: 70%;
-        left: 30%; } }
+        width: 60%;
+        left: 40%; } }
     @media only screen and (max-width: 50em) {
       .testimonials__right {
         position: relative;
         top: 0;
         left: 0;
         order: 1;
-        height: 50%;
-        width: 50%;
-        min-width: 50rem;
+        height: 32rem;
+        min-width: 32rem;
         background-size: cover;
-        margin-bottom: auto;
+        margin-bottom: 15rem;
         box-shadow: 0rem 6.5rem 7rem -6rem var(--color-secondary); } }
+    @media only screen and (max-width: 34.25em) {
+      .testimonials__right {
+        height: 31rem;
+        min-width: 31rem;
+        margin-bottom: 20rem; } }
+    @media only screen and (max-width: 26em) {
+      .testimonials__right {
+        height: 25rem;
+        min-width: 0;
+        width: 100%; } }
 
 .footer {
   text-align: center;
-  margin-top: 5rem;
   font-size: 1.5rem; }
+
+.attribution a:visited,
+.attribution a:link {
+  color: var(--color-secondary);
+  text-decoration: none; }
+
+.attribution a:hover {
+  color: var(--color-primary); }
 
 .text-main {
   font-size: 3.2rem;
@@ -136,10 +210,16 @@ body {
   font-weight: 300;
   line-height: 1.5;
   position: relative; }
+  @media only screen and (max-width: 62.5em) {
+    .text-main {
+      font-size: 2.5rem; } }
   @media only screen and (max-width: 50em) {
     .text-main {
       line-height: 1.2;
-      font-size: 3rem; } }
+      font-size: 2.2rem; } }
+  @media only screen and (max-width: 26em) {
+    .text-main {
+      line-height: 1; } }
   .text-main::after {
     content: url(../img/pattern-quotes.svg);
     position: absolute;
@@ -147,10 +227,12 @@ body {
     left: 9.5rem; }
     @media only screen and (max-width: 75em) {
       .text-main::after {
-        top: -7.5rem; } }
+        top: -4.5rem;
+        transform: scale(0.65);
+        left: 5rem; } }
     @media only screen and (max-width: 62.5em) {
       .text-main::after {
-        top: -9rem; } }
+        top: -6rem; } }
     @media only screen and (max-width: 50em) {
       .text-main::after {
         content: none; } }
@@ -160,22 +242,18 @@ body {
   font-weight: 700;
   font-size: 1.9rem; }
 
-.btn-wrapper {
-  position: absolute;
-  display: flex;
-  bottom: 0;
-  right: -12.5rem;
-  transform: translateY(50%); }
-  @media only screen and (max-width: 50em) {
-    .btn-wrapper {
-      bottom: 100%;
-      transform: translate(50%, -280%);
-      right: 50%; } }
-
 .btn {
   border: none;
   padding: 1em 2em;
-  display: inline; }
+  display: inline;
+  cursor: pointer;
+  outline: none; }
+  @media only screen and (max-width: 50em) {
+    .btn {
+      padding: 0.8em 1.5em; } }
+  .btn:hover {
+    opacity: 0.9;
+    background-color: var(--color-primary); }
 
 .btn-previous {
   border-top-left-radius: 3rem;
@@ -190,7 +268,65 @@ body {
   background-color: #fff; }
 
 .active {
-  display: flex; }
+  display: flex;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  animation-fill-mode: both; }
+
+.right-bg {
+  background-image: url(../img/image-john.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 50.5%;
+  height: 100%;
+  position: absolute;
+  left: 49.5%;
+  border-radius: 0.5rem;
+  box-shadow: 0rem 2.5rem 3rem -3rem var(--color-secondary); }
+  @media only screen and (max-width: 75em) {
+    .right-bg {
+      width: 55%;
+      left: 45%; } }
+  @media only screen and (max-width: 62.5em) {
+    .right-bg {
+      width: 60%;
+      left: 40%; } }
+  @media only screen and (max-width: 50em) {
+    .right-bg {
+      position: relative;
+      top: 0;
+      left: 0;
+      order: 1;
+      height: 32rem;
+      min-width: 32rem;
+      background-size: cover;
+      margin-bottom: 15rem;
+      box-shadow: 0rem 6.5rem 7rem -6rem var(--color-secondary); } }
+  @media only screen and (max-width: 34.25em) {
+    .right-bg {
+      height: 31rem;
+      min-width: 31rem;
+      margin-bottom: 20rem; } }
+  @media only screen and (max-width: 26em) {
+    .right-bg {
+      height: 25rem;
+      min-width: 0;
+      width: 100%; } }
+
+.p-m {
+  padding: 5em; }
 
 .u-mb-m {
   margin-bottom: 5rem; }
+  @media only screen and (max-width: 26em) {
+    .u-mb-m {
+      margin-bottom: 12rem; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }

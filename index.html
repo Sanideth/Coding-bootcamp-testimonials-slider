@@ -2,22 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.prefixed.css">
   
   <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
   
 </head>
 <body>
-  <div class="container">
-    <section class="testimonials">
+  <div class="container p-m">
+    <section class="testimonials" id="main">
       <div class="testimonials__content-wrapper active">
         <div class="testimonials__left">
           <div class="testimonials__main-text-wrapper u-mb-m">
@@ -28,24 +28,24 @@
           <div class="testimonials__secondary-text-wrapper">
             <h3 class="heading-tertiary">Tanya Sinclair&nbsp;<span class="testimonials__span">UX Engineer</span></h3>
           </div>
-          <div class="btn-wrapper">
-            <button class="btn btn-previous">
+          <div class="testimonials__btn-wrapper">
+            <button class="btn btn-previous"aria-label="Button Previous">
               <img src="./img/icon-prev.svg" alt="Previous Arrow" class="icon-previous">
             </button>
-            <button class="btn btn-next">
+            <button class="btn btn-next" aria-label="Button Next">
               <img src="./img/icon-next.svg" alt="Next Arrow" class="icon-next">
             </button>
           </div>
         </div>
-        <div>
+        
         <div class="testimonials__right">
           
         </div>
-      </div>
+      
       </div>
       <div class="testimonials__content-wrapper">
         <div class="testimonials__left">
-          <div class="testimonials__main-text-wrapper">
+          <div class="testimonials__main-text-wrapper u-mb-m">
             <p class="text-main">“ If you want to lay the best foundation possible I’d recommend taking this course. 
               The depth the instructors go into is incredible. I now feel so confident about 
               starting up as a professional developer. ”</p>
@@ -53,8 +53,16 @@
           <div class="testimonials__secondary-text-wrapper">
             <h3 class="heading-tertiary">John Tarkpor &nbsp;<span class="testimonials__span">Junior Front-end Developer</span></h3>
           </div>
+          <div class="testimonials__btn-wrapper">
+            <button class="btn btn-previous"aria-label="Button Previous">
+              <img src="./img/icon-prev.svg" alt="Previous Arrow" class="icon-previous">
+            </button>
+            <button class="btn btn-next"aria-label="Button Next">
+              <img src="./img/icon-next.svg" alt="Next Arrow" class="icon-next">
+            </button>
+          </div>
         </div>
-        <div class="testimonials__right">
+        <div class="testimonials__right right-bg">
           
         </div>
       </div>
@@ -69,6 +77,6 @@
   </div>
 
   
-  
+  <script src="./index.js"></script>
 </body>
 </html>

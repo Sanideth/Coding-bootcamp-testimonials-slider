@@ -1,53 +1,75 @@
 .testimonials {
-  padding: 0 5em;
+  padding: 0 10em;
+  margin-bottom: 5rem;
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 5em 10em;
+    margin: 0;
+  }
+  @media only screen and (max-width: $bp-smallest) {
+    padding: 5em 3em;
+  }
+  @media only screen and (max-width: $bp-tiny) {
+    padding: 5em 0;
+  }
 
   &__content-wrapper {
     display: none;
-    height: 65vh;
+    height: 55rem;
     position: relative;
     width: 100%;
+
     @media only screen and (max-width: $bp-big) {
-      height: 50vh;
+      height: 50rem;
     }
     @media only screen and (max-width: $bp-medium) {
-      height: 40vh;
+      height: 45rem;
     }
     @media only screen and (max-width: $bp-small) {
       flex-direction: column;
       align-items: center;
-      height: 70vh;
+      height: 75rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+      align-items: center;
+      height: 80rem;
     }
   }
 
   &__left {
-    width: 50%;
+    flex-basis: 55%;
     height: 100%;
     position: relative;
     z-index: 1000;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    @media only screen and (max-width: $bp-big) {
-      width: 47%;
-    }
+
     @media only screen and (max-width: $bp-medium) {
-      width: 40%;
+      flex-basis: 50%;
     }
     @media only screen and (max-width: $bp-small) {
       order: 2;
-      height: 30%;
       text-align: center;
-      width: 85%;
+
+      flex-basis: 30%;
     }
   }
   &__main-text-wrapper {
     @media only screen and (max-width: $bp-small) {
+      height: 15rem;
+    }
+    @media only screen and (max-width: $bp-small) {
       &::before {
         content: url(../img/pattern-quotes.svg);
         position: absolute;
-        top: -20%;
+        top: -26%;
         left: 50%;
-        transform: translate(-50%, -10%);
+        transform: translate(-50%, -10%) scale(0.65);
+        @media only screen and (max-width: $bp-tiny) {
+          top: -18%;
+        }
       }
     }
   }
@@ -55,6 +77,33 @@
   &__span {
     color: var(--color-primary);
     font-weight: 400;
+
+    @media only screen and (max-width: $bp-small) {
+      display: block;
+    }
+  }
+
+  &__btn-wrapper {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    right: -12.5rem;
+    transform: translateY(50%);
+    @media only screen and (max-width: $bp-big) {
+      right: -10.5rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      bottom: 95%;
+      transform: translate(50%, -280%);
+      right: 50%;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      bottom: 116%;
+    }
+    @media only screen and (max-width: $bp-tiny) {
+      bottom: 113%;
+    }
   }
 
   &__right {
@@ -62,39 +111,59 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 55%;
+    width: 50.5%;
     height: 100%;
     position: absolute;
-    left: 45%;
+    left: 49.5%;
     border-radius: 0.5rem;
     box-shadow: 0rem 2.5rem 3rem -3rem var(--color-secondary);
 
     @media only screen and (max-width: $bp-big) {
+      width: 55%;
+      left: 45%;
+    }
+    @media only screen and (max-width: $bp-medium) {
       width: 60%;
       left: 40%;
     }
 
-    @media only screen and (max-width: $bp-medium) {
-      width: 70%;
-      left: 30%;
-    }
     @media only screen and (max-width: $bp-small) {
       position: relative;
       top: 0;
       left: 0;
       order: 1;
-      height: 50%;
-      width: 50%;
-      min-width: 50rem;
+      height: 32rem;
+      min-width: 32rem;
       background-size: cover;
-      margin-bottom: auto;
+      margin-bottom: 15rem;
       box-shadow: 0rem 6.5rem 7rem -6rem var(--color-secondary);
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      height: 31rem;
+      min-width: 31rem;
+      margin-bottom: 20rem;
+    }
+
+    @media only screen and (max-width: $bp-tiny) {
+      height: 25rem;
+      min-width: 0;
+      width: 100%;
     }
   }
 }
 
 .footer {
   text-align: center;
-  margin-top: 5rem;
   font-size: 1.5rem;
+}
+
+.attribution a:visited,
+.attribution a:link {
+  color: var(--color-secondary);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: var(--color-primary);
 }

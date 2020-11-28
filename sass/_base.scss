@@ -15,15 +15,13 @@ $bp-big: 75em; //breakpoint at 1200px
 $bp-medium: 62.5em; //breakpoint at 1000px
 $bp-small: 50em; //breakpoint at 800px
 $bp-smallest: 34.25em; //breakpoint at 548px
+$bp-tiny: 26em; //breakpoint at 416px
 
 html {
   font-size: 62.5%;
 
   @media only screen and (max-width: $bp-big) {
     font-size: 55%;
-  }
-  @media only screen and (max-width: $bp-medium) {
-    font-size: 50%;
   }
 }
 
@@ -34,26 +32,47 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../img/pattern-bg.svg), url(../img/pattern-curve.svg);
-  background-repeat: no-repeat, no-repeat;
-  background-position: right 10% top 80px, bottom 0rem left 0rem;
-  background-size: 885px;
-
-  @media only screen and (max-width: $bp-medium) {
-    background-position: right 10% top 21rem, bottom 0rem left 0rem;
-    background-size: 730px;
-  }
+  background-image: url(../img/pattern-curve.svg);
+  background-position: bottom 0 left 0;
+  background-repeat: no-repeat;
+  background-size: 125rem;
   @media only screen and (max-width: $bp-big) {
-    background-position: right 10% top 21rem, bottom 0rem left 0rem;
-    background-size: 730px;
+    background-size: 90rem;
   }
 
   @media only screen and (max-width: $bp-small) {
-    background-position: right 13rem top 28rem, bottom 0rem left 0rem;
-    background-size: 45rem, 80%;
+    background-size: 75rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    background-size: 50rem;
   }
 }
 
 .container {
   max-width: 135rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-image: url(../img/pattern-bg.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 0 center;
+  background-size: contain;
+  @media only screen and (max-width: $bp-big) {
+    max-width: 115rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    max-width: 100rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    background-size: 60rem;
+    background-position: right 0 top 0;
+  }
+  @media only screen and (max-width: $bp-smallest) {
+    background-size: 50rem;
+    background-position: right 0 top 0;
+  }
+  @media only screen and (max-width: $bp-tiny) {
+    background-position: left 0 top 0;
+  }
 }
